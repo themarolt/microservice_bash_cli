@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    build:
+      context: ../frontends/app
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+      - '443:443'
+    networks:
+      - test-bridge
+
+networks:
+  test-bridge:
+    external: true

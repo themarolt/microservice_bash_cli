@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+DOCKERFILE=".frontends/app/Dockerfile"
+CONTEXT="frontends/app"
+REPO="test/app"
